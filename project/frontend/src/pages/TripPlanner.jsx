@@ -66,7 +66,7 @@ const TripPlanner = () => {
       console.log('Backend response:', data);
 
       setGeneratedPlan({
-        itineraryText: data.plan.reply || data.plan.response || JSON.stringify(data.plan)
+        itineraryText: data.plan.reply || data.plan.response || JSON.stringify(data.plan).trim()
       });
 
     } catch (error) {
@@ -221,30 +221,39 @@ const TripPlanner = () => {
           </div>
 
           {/* Result */}
-          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6">
-            {!generatedPlan && !isGenerating && (
-              <div className="text-center py-12">
-                <Sparkles className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Ready to Plan?</h3>
-                <p className="text-gray-600">Fill out the form to create your perfect itinerary with COSMO TRAVEL.</p>
-              </div>
-            )}
+         {/* Result */}
+<div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6">
+  {!generatedPlan && !isGenerating && (
+    <div className="text-center py-12">
+      <Sparkles className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">Ready to Plan?</h3>
+      <p className="text-gray-600">
+        Fill out the form to create your perfect itinerary with COSMO TRAVEL.
+      </p>
+    </div>
+  )}
 
-            {isGenerating && (
-              <div className="text-center py-12">
-                <div className="w-16 h-16 border-4 border-orange-200 border-t-orange-500 rounded-full animate-spin mx-auto mb-4"></div>
-                <h3 className="text-xl font-semibold">Creating Your Itinerary...</h3>
-              </div>
-            )}
+  {isGenerating && (
+    <div className="text-center py-12">
+      <div className="w-16 h-16 border-4 border-orange-200 border-t-orange-500 rounded-full animate-spin mx-auto mb-4"></div>
+      <h3 className="text-xl font-semibold">Creating Your Itinerary...</h3>
+    </div>
+  )}
 
-            {generatedPlan && (
-              <div className="whitespace-pre-line text-gray-800">
-                <div dangerouslySetInnerHTML={{ __html: generatedPlan.itineraryText }} />
-                <hr className="my-4" />
-                <p className="text-sm text-gray-500 text-center">This plan is generated for you by <strong>COSMO TRAVEL</strong>. Safe travels!</p>
-              </div>
-            )}
-          </div>
+  {generatedPlan && (
+    <div className="max-h-[600px] overflow-y-auto whitespace-pre-line text-gray-800 space-y-4">
+      <div
+        className="prose prose-orange max-w-none"
+        dangerouslySetInnerHTML={{ __html: generatedPlan.itineraryText }}
+      />
+      <hr className="my-4" />
+      <p className="text-sm text-gray-500 text-center">
+        This plan is generated for you by <strong>COSMO TRAVEL</strong>. Safe travels!
+      </p>
+    </div>
+  )}
+</div>
+
         </div>
       </div>
     </div>

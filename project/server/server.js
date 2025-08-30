@@ -52,7 +52,7 @@ Create a detailed daily itinerary for the following request:
 
 
 
-
+// Lyzr api to display attraction.
 
 
   try {
