@@ -54,7 +54,8 @@ Clean, responsive interface built with TailwindCSS.
 
 
 
-#Screenshorts
+## **Screenshorts**
+
 <img width="1895" height="878" alt="Screenshot 2025-11-22 202110" src="https://github.com/user-attachments/assets/240f82e4-bb2e-4771-9c31-7c83a1860b3b" />
 
 <img width="1907" height="877" alt="Screenshot 2025-11-22 202053" src="https://github.com/user-attachments/assets/6daa6668-a3d1-498d-8bf0-968f0fd0c625" />
