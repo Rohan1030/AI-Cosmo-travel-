@@ -1,107 +1,60 @@
-🌍 COSMOTRAVEL — AI City Travel Planner
+##🌎 CosmoTravel
 
-CosmoTravel is an AI-powered travel discovery app that helps people decide where to travel inside a city on a budget.
-It creates smart itineraries, finds local dishes, suggests places to explore, and gives real-time smart search — all wrapped inside a beautiful UI.
+An AI-powered city travel guide that helps you explore any city within your budget.
+CosmoTravel generates personalized itineraries, shows local food to try, recommends hangout spots, and highlights city attractions — all powered by AI and a clean, modern UI.
 
-This project uses React + TailwindCSS on the frontend, Node.js / Express on the backend, AI Agents for itinerary generation, and Supabase Authentication for secure user login.
+✨ What CosmoTravel Does
+🧠 AI Trip Planner
 
-⭐ Features
-🧠 AI-Powered Trip Planner
+Get a fully personalized, day-wise itinerary for any city based on your budget and interests.
 
-Generate a complete day-wise itinerary for any city based on:
+🍛 Local Food Explorer
 
-Budget
+Discover iconic dishes with AI-generated descriptions and high-quality images.
 
-Duration
+📍 City Spots & Hangouts
 
-Travel style (budget, luxury, adventure)
+Explore cafes, restaurants, tourist attractions, and hidden street-food areas.
 
-Number of travelers
+🔎 Smart Search
 
-Interests (food, nature, nightlife, etc.)
-
-🍽️ Local Dishes + Food Explorer
-
-Find iconic local dishes for every city with:
-
-AI-generated descriptions
-
-
-Ingredients & cultural info
-
-📍 Explore Nearby Places
-
-Discover:
-
-Restaurants
-
-Cafes
-
-Attractions
-
-Street food spots
-
-Hidden gems
-
-Using Geoapify/OpenTripMap data.
-
-🔎 Smart Search (Tavily AI)
-
-Quick AI-powered answers with rich results, images, and links.
+Ask anything — get instant AI-powered summaries for your travel questions.
 
 🔐 Supabase Authentication
 
-Simple, secure, reliable:
+Simple, secure email-password login & user session management.
 
-Email + password auth
+🎨 Modern UI
 
-Session management
-
-Protected backend API routes
-
-🎨 Beautiful Modern UI
-
-Built using:
-
-React
-
-TailwindCSS
-
-Lucide icons
-
-Fully responsive design
+Clean, responsive interface built with TailwindCSS and Lucide Icons.
 
 🛠️ Tech Stack
 Frontend
 
-React
+⚛️ React
 
-TailwindCSS
+🎨 TailwindCSS
 
-React Router
+🔗 React Router
 
-Lucide Icons
-
-Supabase JS Client
+🖼️ Lucide Icons
 
 Backend
 
-Node.js
+🟩 Node.js
 
-Express.js
+🚏 Express.js
 
-Axios
+🌐 Axios
 
-Supabase Auth (server-side verification)
+AI / External APIs
 
-AI & APIs
+🤖 Lyzr AI Agent (Dynamic trip planner)
 
-AI Agent (Lyzr) → Trip planning
+🧠 OpenAI (Local dishes & text generation)
 
-OpenAI / GPT → Local dishes
+🔍 Tavily Search (AI web summaries)
 
-Unsplash / Pixabay / MealDB → Food images
+Authentication
 
-Geoapify / OpenTripMap → Places data
-
-Tavily → AI search summaries
+🔐 Supabase Auth
